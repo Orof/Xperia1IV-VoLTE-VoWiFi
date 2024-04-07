@@ -34,7 +34,7 @@ REPLACE_EXAMPLE="
 
 # Construct your own list here
 REPLACE="
-/system/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/
+/system/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/
 "
 
 ##########################################################################################
@@ -58,7 +58,7 @@ set_permissions() {
   
   # set_perm $MODPATH/system/lib/libart.so 0 0 0644
   # set_perm /data/local/tmp/file.txt 0 0 644
-  set_perm_recursive $MODPATH/system/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw 0 0 0755 0644 u:object_r:vendor_file:s0
+  set_perm_recursive $MODPATH/system/vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw 0 0 0755 0644 u:object_r:vendor_file:s0
   set_perm_recursive $MODPATH 0 0 0755 0644 u:object_r:vendor_file:s0
 }
 
